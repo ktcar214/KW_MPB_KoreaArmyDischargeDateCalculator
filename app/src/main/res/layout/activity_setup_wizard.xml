@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetupWizardActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="20dp"
+        android:text="전역일 계산기를\n사용해주셔서 감사합니다."
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tv_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:text="입대일 설정"
+        android:textSize="30sp" />
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_setting"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_setting"
+        android:paddingLeft="20dp"
+        android:paddingTop="40dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/rb_army"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MIL_ARMY" />
+
+        <RadioButton
+            android:id="@+id/rb_navy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MIL_NAVY" />
+
+        <RadioButton
+            android:id="@+id/rb_marine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MIL_MARINE" />
+
+        <RadioButton
+            android:id="@+id/rb_af"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MIL_AIRFORCE" />
+
+        <RadioButton
+            android:id="@+id/rb_socialsvc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MIL_SOCIALSVC" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/b_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:enabled="false"
+        android:text="다음"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ARMY" >123</integer>
+    <integer name="NAVY" >123</integer>
+    <integer name="MARINE" >123</integer>
+    <integer name="AIRFORCE" >123</integer>
+    <integer name="SOCIALSVC" >123</integer>
+</resources>
